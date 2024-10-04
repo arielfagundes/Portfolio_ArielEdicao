@@ -20,16 +20,17 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 0 20px;
+    padding: 20px;
     margin-top: 80px;
     border-radius: 10px;
+    width: 90%;
     
 }
 
 #headerAbout a{
     margin-right: 40px;
     color: white;
-
+    font-size: 1rem;
 }
 
 #fixed-header{
@@ -53,14 +54,63 @@ h1{
     scroll-margin-top: 80px;
     margin: 70px 0 10px 0;
     border-radius: 15px;
-    padding: 10px 15px 0px 15px;
-    width: 53%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    padding: 10px;
+    width: 90%;
     
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 560px; /* Limite para telas grandes */
+}
+
+/* Media Query para telas menores (celulares) */
+@media (max-width: 768px) {
+    #headerAbout a {
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    #principal {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    #fixed-header {
+        padding: 8px 0;
+    }
+
+    #videoChopin, #videoMozart, #videoBeethoven, #videoTrailer, #videoMusical {
+        margin: 50px 0 10px 0;
+        padding: 8px;
+        width: 100%; /* Ajusta a largura dos vídeos no celular */
+    }
+
+    iframe {
+        height: auto; /* Faz o vídeo ser responsivo em altura também */
+    }
+}
+
+/* Media Query para telas grandes (desktops) */
+@media (min-width: 769px) {
+    #headerAbout a {
+        margin-right: 40px;
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 315px; /* Faz o vídeo ser responsivo em altura também */
+    }
+
+    #principal {
+        width: 70%;
+    }
+
+    #videoChopin, #videoMozart, #videoBeethoven, #videoTrailer, #videoMusical {
+        width: 60%; /* Mantém os vídeos em uma largura fixa para desktops */
+    }
 }
 
 a{
