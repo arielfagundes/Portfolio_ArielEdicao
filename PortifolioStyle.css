@@ -48,7 +48,7 @@ h1{
     scroll-margin-top: 80px;
 }
 
-#videoTrailer, #videoChopin, #videoMozart, #videoBeethoven, #videoLogomarca, #videoMulticameras, #videoAlpha{
+#videoTrailer, #videoChopin, #videoMozart, #videoBeethoven, #videoLogomarca, #videoAlpha{
     background-color: #ff531f;
     color: white;
     scroll-margin-top: 80px;
@@ -81,8 +81,8 @@ iframe {
         padding: 8px 0;
     }
     
-
-    #videoTrailer, #videoChopin, #videoMozart, #videoBeethoven, #videoLogomarca, #videoAlpha {
+    
+    #videoTrailer, #videoChopin, #videoMozart, #videoBeethoven, #videoLogomarca, #videoAlpha{
         margin: 50px 0 10px 0;
         padding: 8px;
         width: 100%; /* Ajusta a largura dos vídeos no celular */
@@ -109,7 +109,7 @@ iframe {
         width: 70%;
     }
 
-    #videoChopin, #videoMozart, #videoBeethoven, #videoTrailer, #videoMusical {
+    #videoTrailer, #videoChopin, #videoMozart, #videoBeethoven, #videoLogomarca, #videoAlpha {
         width: 60%; /* Mantém os vídeos em uma largura fixa para desktops */
     }
 }
